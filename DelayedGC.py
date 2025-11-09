@@ -62,7 +62,7 @@ def get_weather_forecast(location: str, start_date: str, end_date: str) -> str:
         # Handle any other exceptions
         return(f"Error: {str(e)}")
 
-LLM_CALL_DELAY_SECONDS = 12
+LLM_CALL_DELAY_SECONDS = 15
 
 def create_delayed_gemini_client(config):
     """
@@ -167,8 +167,18 @@ forecaster = AssistantAgent(
     """
 )
 
+converter = AssistantAgent(
+    name="CalendarFormConverter",
+    llm_config=gemini_llm_config,
+    system_message="""CalendarFormConverter. Your primary goal is to convert the finalized travel plan into a realistic scheulde.
+    Your role is to take the approved travel plan and make the plan into a schedule deciding the timings and order of events as outlined in the plan.
+    You are to then create a final calendar form version of the plan where each event has location and time specified and this information is to be written to calform.md"""
+)
+
+
+
 groupchat = GroupChat(
-    agents=[user_proxy, planner, researcher, coordinator, forecaster],
+    agents=[user_proxy, planner, researcher, coordinator, forecaster,converter],
     messages=[],
     max_round=12, # Increased max_round to allow for tool calls and more conversation
     speaker_selection_method="auto" # Let manager decide who speaks
@@ -183,7 +193,7 @@ try:
     print(f"\n--- Starting chat with per-LLM-call delay of {LLM_CALL_DELAY_SECONDS} seconds ---\n")
     chat_result = user_proxy.initiate_chat(
         manager,
-        message="Plan a 5-day food and culture trip to Kyoto in April. I want to see historical sites, experience local food, and find some unique hidden gems. Also, tell me about the weather for that period."
+        message="Plan a 5-day food and culture trip to Kyoto in December from December 20th to December 25th 2025. I want to see historical sites, experience local food, and find some unique hidden gems. Also, take into account the weather for the activites."
     )
     print("\n--- Chat completed ---")
 

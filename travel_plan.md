@@ -1,141 +1,189 @@
 	 -> Travel Plan <-
 
-Here are specific restaurant, cultural spot, local experience, and hidden gem suggestions for your 5-day Kyoto trip, incorporating the weather forecast and aligning with your preferences.
+I understand. I will now write the provided schedule content to `calform.md`.
+
+```
+# Kyoto Food & Culture Trip Schedule: December 20th - December 25th, 2025
+
+**General Notes:**
+*   **Dress Warmly:** December in Kyoto is cold. Wear multiple layers, including thermals, sweaters, a heavy winter coat, hat, gloves, and scarf daily.
+*   **Footwear:** Comfortable, waterproof, and insulated walking shoes are essential for extensive walking and potential snow/rain.
+*   **Umbrella:** Carry a compact umbrella, especially on Dec 21st, 24th, and 25th.
+*   **Reservations:** For popular dinner spots, especially Kaiseki or Christmas Eve dinner, make reservations well in advance.
+*   **Transportation:** Utilize Kyoto's excellent public transportation (buses, subway, trains). Google Maps is highly recommended for navigation.
+*   **Flexibility:** This is a suggested schedule; feel free to adjust based on your energy levels and interests.
 
 ---
 
-### Kyoto Itinerary: 5-Day Food & Culture Trip (Detailed Suggestions)
+## Day 1: Friday, December 20th, 2025 - Arrival, Central Kyoto & Gion Immersion
 
-**Weather Summary for April 1st-5th:**
-Expect mild temperatures ranging from 8°C to 19°C.
-*   **April 1st (Partly Cloudy, light rain):** Bring a light jacket and a compact umbrella.
-*   **April 2nd & 3rd (Sunny):** Ideal for outdoor exploration. Dress in layers.
-*   **April 4th (Light Rain):** An umbrella and waterproof shoes are recommended.
-*   **April 5th (Cloudy, light rain):** Prepare for occasional light rain with an umbrella.
+**Weather:** Partly Cloudy. High: 7°C, Low: 0°C. 10% chance of precipitation. (Cold but dry, good for market and evening strolls.)
 
----
-
-#### **Day 1: Traditional Charms of Higashiyama & Gion**
-
-*   **Morning (Historical Sites & Culture):**
-    *   **Kiyomizu-dera Temple, Sannenzaka & Ninenzaka:** Enjoy the traditional atmosphere.
-    *   **Craft Shops/Tea Houses:** Look for *Kyoto-style pottery (Kiyomizu-yaki)* at shops like **Kiyomizu-yaki Danchi** (a bit further out, but shops in Sannenzaka sell it). For a quick tea break, **Fujinmaru** in Ninenzaka offers traditional sweets and matcha.
-    *   **Kodai-ji Temple:** Explore its beautiful gardens and bamboo grove.
-*   **Lunch (Local Food - Yuba, Soba/Udon):**
-    *   **Specific Suggestion:** **Saryo Tsujiri Gion Honten** (祇園辻利 祇園本店) in Gion. While famous for its matcha desserts, they also offer light meals like *ochazuke* (rice with tea) and *udon*.
-    *   **Specific Suggestion (Yuba):** **Tofu Ryori Sagano** (嵯峨野) in the Higashiyama area. They specialize in various tofu and yuba dishes, offering a serene setting.
-    *   **Specific Suggestion (Soba):** **Arashiyama Yoshimura** (嵐山よしむら) – a bit of a stretch from Higashiyama, but they have exquisite soba. For something closer, search for smaller *soba* shops around Gion.
-*   **Afternoon (Culture & Hidden Gem):**
-    *   **Maruyama Park, Chion-in Temple, Shoren-in Temple:** All excellent choices.
-    *   **Hidden Gem (Shirakawa Canal):** The stretch near Tatsumi Bridge is magical. Consider taking photos from the **Tatsumi Daimyojin Shrine**, a tiny, picturesque shrine along the canal.
-*   **Evening (Local Food & Culture - Kaiseki/Obanzai):**
-    *   **Food Experience (Kaiseki):** For an unforgettable experience, research and book in advance.
-        *   **Specific Suggestion (Mid-Range Kaiseki):** **Gion Karyo** (祇園華舞) offers refined Kyoto cuisine in a beautiful setting.
-        *   **Specific Suggestion (High-End Kaiseki):** **Kikunoi Roan** (菊乃井 露庵) in Pontocho offers Michelin-starred kaiseki.
-    *   **Food Experience (Obanzai - Kyoto-style home cooking):**
-        *   **Specific Suggestion:** **Manzara-tei Pontocho** (まんざら亭 先斗町店) offers a cozy atmosphere and a wide selection of *obanzai* dishes, perfect for a relaxed evening.
-    *   **Culture (Hanamikoji Street):** Stroll here after dinner. While spotting a geisha is rare, the ambiance is captivating.
-
-**Web Search Used:** "Kyoto Higashiyama yuba restaurant", "Gion kaiseki restaurant", "Pontocho obanzai restaurant", "Saryo Tsujiri Gion Honten menu".
-**Findings:** Found Tofu Ryori Sagano for yuba, Gion Karyo and Kikunoi Roan for kaiseki, and Manzara-tei Pontocho for obanzai. Saryo Tsujiri is confirmed for matcha and light meals.
+*   **10:00 AM - 12:00 PM:** **Arrival & Check-in**
+    *   **Location:** Kansai International Airport (KIX) to Kyoto Station (Haruka Express), then to your accommodation.
+    *   **Activity:** Arrive in Kyoto, check into your hotel, drop off luggage.
+*   **12:00 PM - 01:00 PM:** **Lunch (Kyoto Station Area)**
+    *   **Location:** Restaurants around Kyoto Station.
+    *   **Activity:** Quick, casual lunch to fuel up.
+*   **01:30 PM - 04:30 PM:** **Nishiki Market Exploration**
+    *   **Location:** Nishiki Market ("Kyoto's Kitchen"), central Kyoto.
+    *   **Activity:** Explore the bustling covered market. Sample Takoyaki at **Karikari Hakase**, Tamagoyaki at **Daimaru Kichizaemon**, and various Tsukemono at **Nishiki Takakura-ya**.
+    *   **Hidden Gem:** Seek out **Sake Bar Asakura** for a local sake tasting experience.
+*   **04:30 PM - 06:30 PM:** **Gion District Stroll**
+    *   **Location:** Hanamikoji-dori and Shirakawa area, Gion.
+    *   **Activity:** Wander the historic streets, admiring traditional machiya houses and potentially spotting geiko/maiko. The gas lamps create a magical atmosphere as dusk falls.
+*   **07:00 PM - 09:00 PM:** **Dinner in Gion or Pontocho Alley**
+    *   **Location:** Pontocho Alley or Gion.
+    *   **Activity:** Enjoy dinner.
+        *   **Option 1 (Kaiseki):** **Gion Karyo** or **Gion Sasaki** (reservations essential, expensive).
+        *   **Option 2 (Casual Izakaya):** **Sumibi-tei** (yakitori) or **Pontocho Yakiniku Yaruki** (grilled meats) in Pontocho Alley.
 
 ---
 
-#### **Day 2: Serene Landscapes of Arashiyama**
+## Day 2: Saturday, December 21st, 2025 - Arashiyama Serenity & Golden Beauty
 
-*   **Morning (Historical Sites & Nature):**
-    *   **Bamboo Grove, Tenryu-ji Temple, Okochi Sanso Villa:** All excellent. The villa is indeed a fantastic hidden gem, offering tranquility and stunning views.
-*   **Lunch (Local Food - Tofu Cuisine):**
-    *   **Specific Suggestion (Yudofu):** **Shigetsu** (篩月) located within Tenryu-ji Temple offers a Michelin-starred *shojin ryori* (Buddhist vegetarian cuisine) experience, including *yudofu*, in a serene setting. Reservations are highly recommended.
-    *   **Specific Suggestion (Casual Tofu):** **Arashiyama Yoshimura** (嵐山よしむら) (different from the soba one, this one is for tofu) offers tofu and other traditional dishes with great views of the Togetsukyo Bridge.
-*   **Afternoon (Culture & Nature):**
-    *   **Togetsukyo Bridge, Jojakko-ji Temple:** Jojakko-ji is a peaceful alternative to the main crowds.
-    *   **Optional Hidden Gem:** Consider visiting **Gio-ji Temple**, a small, moss-covered temple with a tragic romantic history, offering a very tranquil and photogenic experience.
-*   **Evening (Local Food - Pontocho Alley):**
-    *   **Specific Suggestion (Izakaya with River Views):** Many restaurants in Pontocho offer seats overlooking the Kamo River. **Pontocho Kappa Zushi** (先斗町 寿司) is a popular, lively spot for sushi.
-    *   **Specific Suggestion (Yakitori/Grilled Skewers):** **Pontocho Robin** (先斗町 ろびん) offers a variety of grilled dishes and local sake in a charming setting.
-    *   **Specific Suggestion (Kyoto-style Italian/Fusion):** **Chao Chao Gyoza Pontocho** (チャオチャオ餃子 先斗町店) is a casual and popular spot if you're craving delicious gyoza, often with unique fillings.
+**Weather:** Light Snow. High: 3°C, Low: -2°C. 60% chance of precipitation. (Very cold with potential snow. Dress in warmest layers, wear waterproof footwear, and be cautious of slippery surfaces.)
 
-**Web Search Used:** "Arashiyama tofu restaurant", "Tenryu-ji Shigetsu", "Pontocho restaurants with river view", "Pontocho casual dinner".
-**Findings:** Shigetsu within Tenryu-ji for shojin ryori/yudofu, Arashiyama Yoshimura for a broader tofu menu. Pontocho Kappa Zushi, Pontocho Robin, and Chao Chao Gyoza for Pontocho evening options. Gio-ji Temple as an additional hidden gem.
-
----
-
-#### **Day 3: Central Kyoto's History & Market Pulse**
-
-*   **Morning (Historical Sites & Culture):**
-    *   **Nijo Castle, Kyoto Imperial Park/Palace:** As planned.
-*   **Lunch (Local Food & Hidden Gem - Nishiki Market):**
-    *   **Specific Food Stalls/Items to Try:**
-        *   **Teramachi Street:** **Kyoto Ramen Kairikiya** (京都ラーメン魁力屋) for a hearty ramen bowl.
-        *   **Nishiki Market:**
-            *   **Aritsugu** (有次): A famous knife shop, worth a browse even if not buying.
-            *   **Takashimaya** (高島屋): Department store basement food hall (depachika) for high-quality bentos and sweets.
-            *   **Konnaya** (こんや): For delicious *tsukemono* (pickled vegetables).
-            *   **Fukuchan** (ふくちゃん): For *takoyaki* (octopus balls).
-            *   **Mochiki** (もちき): For various *mochi* and *dango* (sweet rice dumplings).
-            *   **Sashimi/Sushi Stalls:** Many stalls offer fresh seafood.
-    *   **Hidden Gem (Teramachi/Shinkyogoku):** Explore the covered arcades. You'll find unique boutiques, traditional Japanese souvenir shops, and modern fashion. **Daimaru Department Store** (大丸) also has an impressive food hall.
-*   **Afternoon (Culture & Food):**
-    *   **Tea Ceremony:**
-        *   **Specific Suggestion:** **Maiko Tea Ceremony (Maikoya Kyoto)** (舞妓茶道体験 Maikoya 京都). They offer a traditional tea ceremony experience, sometimes with maiko (apprentice geisha) interaction, providing a deep cultural dive.
-        *   **Specific Suggestion (Authentic & Quiet):** **Tea Ceremony Koto** (茶道体験 壺). A smaller, more intimate setting for a traditional tea ceremony.
-*   **Evening (Local Food - Kawaramachi/Shijo):**
-    *   **Specific Suggestion (Tempura):** **Tempura Endo Yasaka** (天ぷら圓堂 八坂店). Offers exquisite tempura in a beautiful setting. Reservations recommended.
-    *   **Specific Suggestion (Okonomiyaki/Hiroshimayaki):** **Gion Tanto** (祇園 たんと). A lively spot for savory Japanese pancakes, a comforting and delicious meal.
-    *   **Specific Suggestion (Izakaya):** Look for smaller izakayas in the back streets of Kawaramachi for a more local feel.
-
-**Web Search Used:** "Nishiki Market must try food", "Kyoto tea ceremony experience", "Kawaramachi Shijo dinner restaurants", "Kyoto ramen Kairikiya".
-**Findings:** Specific stalls and items for Nishiki Market. Maikoya Kyoto and Tea Ceremony Koto for tea ceremonies. Tempura Endo Yasaka and Gion Tanto for dinner.
+*   **08:00 AM - 09:00 AM:** **Breakfast**
+    *   **Location:** At accommodation or nearby cafe.
+*   **09:00 AM - 09:45 AM:** **Travel to Arashiyama**
+    *   **Location:** From your accommodation to Arashiyama (e.g., JR Sagano Line to Saga-Arashiyama Station).
+*   **09:45 AM - 12:30 PM:** **Arashiyama Exploration**
+    *   **Location:** Arashiyama Bamboo Grove, Tenryu-ji Temple, Okochi Sanso Villa.
+    *   **Activity:** Walk through the serene **Bamboo Grove** (potentially stunning with snow). Visit **Tenryu-ji Temple** (UNESCO World Heritage) and its Zen garden.
+    *   **Hidden Gem:** Explore **Okochi Sanso Villa** for beautiful gardens, views, and a complimentary matcha tea/sweet to warm up.
+*   **12:30 PM - 01:30 PM:** **Lunch in Arashiyama**
+    *   **Location:** Arashiyama restaurants.
+    *   **Activity:** Enjoy a warming lunch. **Arashiyama Yoshimura** for soba noodles or **Sagano Yudofu Ine** for traditional yudofu (boiled tofu).
+*   **01:30 PM - 02:00 PM:** **Travel to Kinkaku-ji**
+    *   **Location:** From Arashiyama to Kinkaku-ji (e.g., bus or train/bus combo).
+*   **02:00 PM - 03:30 PM:** **Kinkaku-ji (Golden Pavilion)**
+    *   **Location:** Kinkaku-ji Temple.
+    *   **Activity:** Visit the iconic Golden Pavilion. A light dusting of snow would make it exceptionally picturesque.
+    *   **Alternative:** If you prefer, visit **Ryoan-ji Temple** nearby for its famous rock garden for a contemplative experience.
+*   **03:30 PM - 04:30 PM:** **Return to Accommodation/Central Kyoto**
+    *   **Location:** From Kinkaku-ji to your accommodation area.
+*   **07:00 PM - 08:30 PM:** **Comfort Dinner**
+    *   **Location:** Kyoto Station area or central Kyoto.
+    *   **Activity:** Enjoy a warm and comforting ramen or udon dinner. **Kyoto Ramen Koji** (Kyoto Station 10F) or **Ippudo Nishikikoji** for ramen. **Omen Kodaiji** for handmade udon.
 
 ---
 
-#### **Day 4: Zen Gardens & Golden Grandeur of Northern Kyoto**
+## Day 3: Sunday, December 22nd, 2025 - Higashiyama Charm & Cultural Immersion
 
-*   **Morning (Historical Sites & Culture):**
-    *   **Kinkaku-ji (Golden Pavilion), Ryoan-ji Temple:** As planned. Arriving early is key for Kinkaku-ji.
-*   **Lunch (Local Food - Udon/Soba):**
-    *   **Specific Suggestion (Udon):** **Menbakaichidai** (めん馬鹿一代). This is a bit of a detour (closer to Nijo Castle area than Kinkaku-ji), but famous for its "fire ramen" experience. For something closer to Northern Kyoto:
-    *   **Specific Suggestion (Soba/Udon near Kinkaku-ji):** **Waraji-ya** (わらじや) is a traditional restaurant specializing in *unagi* (eel) and other Kyoto dishes, but you can find smaller, local *soba/udon* shops surrounding the temple area.
-    *   **Specific Suggestion (Casual):** Many small cafes and restaurants cater to tourists around Kinkaku-ji. Look for set lunch menus (teishoku) which offer good value.
-*   **Afternoon (Hidden Gem & Culture):**
-    *   **Hidden Gem (Daitoku-ji Temple Complex):** Focus on **Koto-in** (高桐院) for its beautiful moss garden and tranquil bamboo path, and **Zuiho-in** (瑞峯院) for its unique dry landscape gardens.
-    *   **Hidden Gem (Funaoka Onsen):** This historic public bathhouse is a fantastic local experience. Don't be shy; it's a great way to unwind and see local life. Remember common onsen etiquette.
-*   **Evening (Local Food - Kyoto Station Area):**
-    *   **Specific Suggestion (Ramen Street):** Located on the 10th floor of the **Kyoto Station Building**, the **Kyoto Ramen Koji** (京都拉麺小路) offers several regional ramen styles. Try **Masutani** for classic Kyoto-style ramen or **Ikkousha** for Hakata-style tonkotsu ramen.
-    *   **Specific Suggestion (Tonkatsu):** **Katsukura Kyoto Station** (かつくら 京都駅ビル店) is highly popular for its delicious *tonkatsu* (pork cutlet) with unlimited rice, soup, and shredded cabbage.
-    *   **Specific Suggestion (Izakaya):** The area around Kyoto Station, particularly the underground mall **Porta**, has many casual izakayas.
+**Weather:** Cloudy. High: 5°C, Low: -1°C. 20% chance of precipitation. (Cold but mostly dry, good for walking and indoor activities.)
 
-**Web Search Used:** "Restaurants near Kinkaku-ji Kyoto", "Daitoku-ji temple sub-temples", "Kyoto Station ramen street", "Kyoto Station Tonkatsu".
-**Findings:** Menbakaichidai (fire ramen, a bit of a detour), Waraji-ya (traditional, higher-end). Koto-in and Zuiho-in for Daitoku-ji. Kyoto Ramen Koji and Katsukura for Kyoto Station dinner.
-
----
-
-#### **Day 5: Fushimi Inari's Thousand Gates & Sake Delights**
-
-*   **Morning (Historical Sites & Nature):**
-    *   **Fushimi Inari-taisha Shrine:** As planned. **April 5th is cloudy with light rain** - wear comfortable, non-slip shoes and bring an umbrella for the hike. The torii gates will still be impressive, perhaps even more atmospheric.
-*   **Lunch (Local Food - Street Food near Fushimi Inari):**
-    *   **Specific Food Stalls/Items:**
-        *   **Inari Sushi:** Sushi rice packed into a fried tofu pouch, a specialty here.
-        *   **Takoyaki:** Savory octopus balls.
-        *   **Yakitori:** Grilled chicken skewers, often with various marinades.
-        *   **Yaki Imo:** Roasted sweet potato, a comforting snack.
-        *   **Mitarashi Dango:** Skewered rice dumplings grilled and coated in a sweet soy glaze.
-*   **Afternoon (Culture & Food - Hidden Gem - Fushimi Sake District):**
-    *   **Specific Suggestion (Sake Museum & Tasting):** **Gekkeikan Okura Sake Museum** (月桂冠大倉記念館) is a must-visit. It offers a fascinating history of sake brewing, traditional tools, and a tasting session at the end.
-    *   **Specific Suggestion (Other Breweries):**
-        *   **Fushimi Yume Hyakushu** (伏見夢百衆): A charming cafe and souvenir shop in a beautifully preserved former sake brewery, offering sake tasting sets and light meals.
-        *   **Kizakura Kappa Country** (キザクラカッパカントリー): A larger complex with a brewery museum, restaurant, and gift shop focusing on Kizakura sake. They also brew craft beer.
-    *   **Local Experience:** Stroll along the **Horikawa River** with its traditional boats and willow trees, reminiscent of a mini Gion.
-*   **Evening (Local Food - Yakitori):**
-    *   **Specific Suggestion (Kyoto Station Area - convenient for departure):** **Torikizoku Kyoto Station Hachijo-guchi** (鳥貴族 京都駅八条口店). A popular chain known for its affordable and delicious *yakitori* (all items at a fixed, reasonable price).
-    *   **Specific Suggestion (Central Kyoto):** **Yakitori Imai Honten** (焼鳥 今井 本店). A more upscale yakitori experience with premium ingredients and a refined atmosphere.
-    *   **Specific Suggestion (Casual):** Explore the back alleys of Kawaramachi or Shijo for smaller, independent *yakitori* shops.
-
-**Web Search Used:** "Fushimi Inari street food", "Fushimi sake district breweries", "Kyoto yakitori restaurant".
-**Findings:** Specific street food items near Fushimi Inari. Gekkeikan Okura Sake Museum, Fushimi Yume Hyakushu, and Kizakura Kappa Country for sake district. Torikizoku and Yakitori Imai Honten for yakitori dinner.
+*   **08:00 AM - 09:00 AM:** **Breakfast**
+    *   **Location:** At accommodation or nearby cafe.
+*   **09:00 AM - 09:30 AM:** **Travel to Higashiyama**
+    *   **Location:** From your accommodation to Kiyomizu-dera area.
+*   **09:30 AM - 11:30 AM:** **Kiyomizu-dera Temple**
+    *   **Location:** Kiyomizu-dera Temple (UNESCO World Heritage).
+    *   **Activity:** Explore the temple, famous for its wooden stage and panoramic views of Kyoto.
+*   **11:30 AM - 01:00 PM:** **Sannenzaka & Ninenzaka Stroll & Snack**
+    *   **Location:** Sannenzaka and Ninenzaka streets.
+    *   **Activity:** Wander the charming, preserved streets. Stop at **Kasagiya** on Ninenzaka for traditional wagashi and a warm matcha green tea to warm up.
+*   **01:00 PM - 02:00 PM:** **Lunch in Higashiyama**
+    *   **Location:** Restaurants in Higashiyama.
+    *   **Activity:** Casual lunch.
+*   **02:00 PM - 03:30 PM:** **Zen & Gardens**
+    *   **Location:** Kodai-ji Temple or Shoren-in Temple.
+    *   **Activity:** Visit **Kodai-ji Temple** for its rock garden, bamboo groves, and lacquer work, or **Shoren-in Temple** for its tranquil pond garden.
+*   **03:45 PM - 05:00 PM:** **Traditional Tea Ceremony**
+    *   **Location:** **Tea Ceremony Koto** or **En Tea Ceremony** in Higashiyama.
+    *   **Activity:** Participate in an intimate, English-friendly traditional tea ceremony – a perfect indoor cultural experience.
+*   **05:00 PM - 06:30 PM:** **Return & Relax**
+    *   **Location:** From Higashiyama to your accommodation.
+*   **07:00 PM - 08:30 PM:** **Dinner in Pontocho Alley**
+    *   **Location:** Pontocho Alley.
+    *   **Activity:** Enjoy dinner. Options range from casual to upscale. Consider **Hafuu Honten** (a short walk from Pontocho) for wagyu beef, or explore other izakayas.
 
 ---
 
-Enjoy your incredible food and culture adventure in Kyoto! Remember to make reservations for popular restaurants, especially for kaiseki, and check opening hours for all attractions.
+## Day 4: Monday, December 23rd, 2025 - Southern Shrine & Zen Gardens
+
+**Weather:** Sunny. High: 8°C, Low: 1°C. 5% chance of precipitation. (A relatively warmer and sunny day, excellent for the Fushimi Inari hike.)
+
+*   **08:00 AM - 09:00 AM:** **Breakfast**
+    *   **Location:** At accommodation or nearby cafe.
+*   **09:00 AM - 09:30 AM:** **Travel to Fushimi Inari Taisha**
+    *   **Location:** From your accommodation to Fushimi Inari (e.g., JR Nara Line to Inari Station).
+*   **09:30 AM - 12:30 PM:** **Fushimi Inari Taisha Hike**
+    *   **Location:** Fushimi Inari Taisha.
+    *   **Activity:** Start early to hike through the thousands of vermillion torii gates, enjoying photo opportunities and panoramic views from higher up.
+*   **12:30 PM - 01:30 PM:** **Street Food Lunch at Fushimi Inari**
+    *   **Location:** Stalls near the entrance of Fushimi Inari.
+    *   **Activity:** Try inari sushi, yakitori, and tsujigiri senbei (fortune crackers).
+*   **01:30 PM - 02:00 PM:** **Travel to Tofuku-ji / Sanjusangendo**
+    *   **Location:** From Fushimi Inari to Tofuku-ji (one stop on JR Nara Line) or Sanjusangendo (bus).
+*   **02:00 PM - 03:30 PM:** **Tofuku-ji Temple or Sanjusangendo Temple**
+    *   **Location:** Tofuku-ji Temple or Sanjusangendo Temple.
+    *   **Activity:**
+        *   **Option 1:** Explore **Tofuku-ji Temple** for its vast Zen gardens and impressive main gate, enjoying its stark winter beauty.
+        *   **Option 2:** Visit **Sanjusangendo Temple** for its awe-inspiring collection of 1,001 statues of Kannon (a powerful indoor experience).
+*   **03:30 PM - 04:30 PM:** **Shojin Ryori Experience (Optional)**
+    *   **Location:** Near Tofuku-ji or a short ride to **Izusen** (near Daitoku-ji) if dedicated.
+    *   **Activity:** Seek out a restaurant specializing in Shojin Ryori (Buddhist vegetarian cuisine) for a unique and healthy meal.
+*   **04:30 PM - 05:30 PM:** **Return to Accommodation**
+    *   **Location:** From Tofuku-ji/Sanjusangendo to your accommodation.
+*   **07:00 PM - 08:30 PM:** **Local Flavors Dinner: Kyoto-style Hot Pot**
+    *   **Location:** Central Kyoto.
+    *   **Activity:** Enjoy a warming Kyoto-style hot pot (nabe). **Mishimatei** for sukiyaki/shabu-shabu or **Happatei** (Higashiyama) for yudofu.
+
+---
+
+## Day 5: Tuesday, December 24th, 2025 - Imperial History & Christmas Eve Charm
+
+**Weather:** Rain. High: 6°C, Low: 2°C. 70% chance of precipitation. (Rainy and cold. Prioritize indoor activities or those with good cover. Carry an umbrella.)
+
+*   **08:00 AM - 09:00 AM:** **Breakfast**
+    *   **Location:** At accommodation or nearby cafe.
+*   **09:00 AM - 09:30 AM:** **Travel to Nijo Castle**
+    *   **Location:** From your accommodation to Nijo Castle.
+*   **09:30 AM - 11:30 AM:** **Nijo Castle Exploration**
+    *   **Location:** Nijo Castle (UNESCO World Heritage).
+    *   **Activity:** Visit the castle, known for its "nightingale floors" and elaborate paintings (good indoor/outdoor mix for rain).
+*   **11:30 AM - 12:30 PM:** **Kyoto Imperial Palace Grounds**
+    *   **Location:** Kyoto Imperial Palace.
+    *   **Activity:** Explore the vast grounds of the Imperial Palace. (Note: Buildings are less ornate; focus on the grandeur of the grounds. Quick walk if raining heavily.)
+*   **12:30 PM - 01:30 PM:** **Lunch in Central Kyoto**
+    *   **Location:** Central Kyoto.
+    *   **Activity:** Enjoy a final Kyoto lunch. **Menya Inoichi Hanare** for ramen or **Tofu Cafe Fujino** for specialty tofu dishes.
+*   **01:30 PM - 03:30 PM:** **Souvenir Shopping**
+    *   **Location:** Kyoto Station building (JR Kyoto Isetan, Porta) or covered shopping arcades of **Teramachi-dori** and **Shinkyogoku-dori**.
+    *   **Activity:** Last-minute souvenir shopping, staying dry in covered areas.
+*   **03:30 PM - 05:00 PM:** **Indoor Cultural Gem**
+    *   **Location:** Kyoto International Manga Museum or Kyoto Museum of Traditional Crafts (Fureai-kan).
+    *   **Activity:**
+        *   **Option 1:** Visit the **Kyoto International Manga Museum** for a fun, unique, and primarily indoor experience.
+        *   **Option 2:** Explore the **Kyoto Museum of Traditional Crafts (Fureai-kan)** for insights into local artistry and possible live demonstrations.
+*   **05:00 PM - 06:30 PM:** **Return & Prepare for Christmas Eve Dinner**
+    *   **Location:** From central Kyoto to your accommodation.
+*   **07:30 PM onwards:** **Christmas Eve Special Dinner**
+    *   **Location:** Upscale restaurant in Gion, Pontocho, or central Kyoto.
+    *   **Activity:** Enjoy a special Christmas Eve dinner. Consider **Restaurant MOTOI** (French-Japanese fusion) or **Cenci** (Italian with local ingredients). Reservations are highly recommended.
+
+---
+
+## Day 6: Wednesday, December 25th, 2025 - Morning Exploration & Departure
+
+**Weather:** Partly Cloudy. High: 4°C, Low: 0°C. 30% chance of precipitation. (Cold but possibly dry, good for a final stroll or indoor activity before departure.)
+
+*   **08:00 AM - 09:00 AM:** **Final Japanese Breakfast**
+    *   **Location:** At accommodation or local cafe.
+*   **09:30 AM - 11:30 AM:** **Morning Activity (Choose based on preference/flight time)**
+    *   **Option 1 (Zen Serenity):** **Daitoku-ji Temple Complex**.
+        *   **Location:** Daitoku-ji Temple complex (North Kyoto).
+        *   **Activity:** Explore this large Zen temple complex with several beautiful sub-temples and exquisite dry landscape gardens for a quiet, authentic experience away from crowds.
+    *   **Option 2 (Indoor Warmth):** **Kyoto Botanical Garden Conservatory**.
+        *   **Location:** Kyoto Botanical Garden (North Kyoto).
+        *   **Activity:** Enjoy a serene walk in the gardens or a warm indoor experience in its large conservatory housing tropical plants.
+*   **11:30 AM - 12:00 PM:** **Final Warm Drink & Reflection**
+    *   **Location:** Local cafe like **Ogawa Coffee** or **Weekenders Coffee**.
+    *   **Activity:** Enjoy a final coffee or tea and reflect on your trip.
+*   **12:00 PM - 01:00 PM:** **Return to Accommodation & Final Packing**
+    *   **Location:** Your accommodation.
+*   **01:00 PM onwards:** **Departure**
+    *   **Location:** Kyoto Station to Kansai International Airport (KIX) via Haruka Express.
+    *   **Activity:** Head to the airport for your departure.
+```
