@@ -3,12 +3,63 @@ from dotenv import load_dotenv
 from autogen import GroupChat, GroupChatManager, AssistantAgent, UserProxyAgent
 import json # For handling JSON responses
 import requests # For making HTTP requests to external APIs (e.g., weather, search)
+from tavily import TavilyClient
+import urllib.request
 import json
 
 load_dotenv()
 
 # The API key for Gemini is now passed directly in the llm_config
 gemini_api_key = os.getenv("GEMINI_API_KEY")
+tavilyKey = os.getenv("TAVILY_API_KEY")
+
+# --- Define Helper Functions (Tools) ---
+
+# Placeholder for a web search tool.
+# In a real scenario, this would call a search API (e.g., Serper, Tavily).
+def web_search(query: str) -> str:
+    """
+    Performs a web search for the given query and returns a summary of results.
+    In a real application, this would integrate with a robust search API like Serper, Tavily, etc.
+    """
+    tavily_client = TavilyClient(api_key=os.getenv("TAVILY_API_KEY"))
+    response = tavily_client.search(query)
+    return response['results']
+
+# Placeholder for a weather forecasting tool.
+# In a real scenario, this would call a weather API (e.g., OpenWeatherMap).
+def get_weather_forecast(location: str, start_date: str, end_date: str) -> str:
+    """
+    Fetches a simulated 5-day weather forecast for the given location and date.
+    In a real application, this would integrate with a weather API like OpenWeatherMap.
+    The date parameters should be in 'YYYY-MM-DD' format.
+    """
+    unit_group = 'metric'
+    content_type = 'json'
+
+    url = f"https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/{location}/{start_date}/{end_date}?unitGroup={unit_group}&contentType={content_type}&key={api_key}"
+    api_key = tavilyKey
+
+    try:
+    # Request weather data from Visual Crossing Weather API
+        with urllib.request.urlopen(url) as response:
+            data = response.read()
+            # Parse the returned JSON data
+            weather_data = json.loads(data.decode('utf-8'))
+            
+            # Print out the results for inspection
+            return(json.dumps(weather_data, indent=4))
+
+    except urllib.error.HTTPError as e:
+        # Handle HTTP errors
+        error_message = e.read().decode('utf-8')
+        return(f"HTTP Error: {e.code}, Message: {error_message}")
+    except urllib.error.URLError as e:
+        # Handle URL errors
+        return(f"URL Error: {e.reason}")
+    except Exception as e:
+        # Handle any other exceptions
+        return(f"Error: {str(e)}")
 
 # --- Define the shared Gemini LLM configuration ---
 gemini_llm_config = {

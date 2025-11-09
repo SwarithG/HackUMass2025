@@ -1,0 +1,217 @@
+import os
+from dotenv import load_dotenv
+from autogen import GroupChat, GroupChatManager, AssistantAgent, UserProxyAgent
+import json # For handling JSON responses
+import requests # For making HTTP requests to external APIs (e.g., weather, search)
+from tavily import TavilyClient
+import urllib.request
+import json
+
+load_dotenv()
+
+# The API key for Gemini is now passed directly in the llm_config
+gemini_api_key = os.getenv("GEMINI_API_KEY")
+tavilyKey = os.getenv("TAVILY_API_KEY")
+
+# --- Define Helper Functions (Tools) ---
+
+# Placeholder for a web search tool.
+# In a real scenario, this would call a search API (e.g., Serper, Tavily).
+def web_search(query: str) -> str:
+    """
+    Performs a web search for the given query and returns a summary of results.
+    In a real application, this would integrate with a robust search API like Serper, Tavily, etc.
+    """
+    tavily_client = TavilyClient(api_key=os.getenv("TAVILY_API_KEY"))
+    response = tavily_client.search(query)
+    return response['results']
+
+# Placeholder for a weather forecasting tool.
+# In a real scenario, this would call a weather API (e.g., OpenWeatherMap).
+def get_weather_forecast(location: str, start_date: str, end_date: str) -> str:
+    """
+    Fetches a simulated 5-day weather forecast for the given location and date.
+    In a real application, this would integrate with a weather API like OpenWeatherMap.
+    The date parameters should be in 'YYYY-MM-DD' format.
+    """
+    unit_group = 'metric'
+    content_type = 'json'
+
+    url = f"https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/{location}/{start_date}/{end_date}?unitGroup={unit_group}&contentType={content_type}&key={api_key}"
+    api_key = tavilyKey
+
+    try:
+    # Request weather data from Visual Crossing Weather API
+        with urllib.request.urlopen(url) as response:
+            data = response.read()
+            # Parse the returned JSON data
+            weather_data = json.loads(data.decode('utf-8'))
+            
+            # Print out the results for inspection
+            return(json.dumps(weather_data, indent=4))
+
+    except urllib.error.HTTPError as e:
+        # Handle HTTP errors
+        error_message = e.read().decode('utf-8')
+        return(f"HTTP Error: {e.code}, Message: {error_message}")
+    except urllib.error.URLError as e:
+        # Handle URL errors
+        return(f"URL Error: {e.reason}")
+    except Exception as e:
+        # Handle any other exceptions
+        return(f"Error: {str(e)}")
+
+LLM_CALL_DELAY_SECONDS = 12
+
+def create_delayed_gemini_client(config):
+    """
+    Custom client builder that injects a delay before each Gemini API call.
+    This function patches the global `genai.GenerativeModel.generate_content` method
+    to include a `time.sleep()`.
+    """
+    # The global genai.configure(api_key=api_key) should handle this,
+    # but we can add a fallback check here if needed.
+    # if not genai.types.Client.api_key and config.get("api_key"):
+    #     genai.configure(api_key=config.get("api_key"))
+
+    # Only patch the method once globally
+    if not hasattr(genai.GenerativeModel, '_original_generate_content'):
+        genai.GenerativeModel._original_generate_content = genai.GenerativeModel.generate_content
+
+        def delayed_generate_content_wrapper(self, *args, **kwargs):
+            print(f"--- [LLM Call Delay: Sleeping for {LLM_CALL_DELAY_SECONDS} seconds] ---")
+            time.sleep(LLM_CALL_DELAY_SECONDS)
+            return genai.GenerativeModel._original_generate_content(self, *args, **kwargs)
+
+        genai.GenerativeModel.generate_content = delayed_generate_content_wrapper
+
+    # Create and return the Gemini model instance (it will now use the patched method)
+    model_name = config.get("model", "gemini-2.5-flash")
+    return genai.GenerativeModel(model_name=model_name)
+
+# --- Define the shared Gemini LLM configuration ---
+gemini_llm_config = {
+    "config_list": [
+        {
+            "model": "gemini-2.5-flash",
+            "api_key": gemini_api_key,
+            "api_type": "google",
+            "custom_client_builder": create_delayed_gemini_client, # Link our custom builder here
+        }
+    ],
+    "temperature": 0.7
+}
+
+# --- Create the agents ---
+
+# The UserProxyAgent needs to know about the functions so it can execute them
+# when an AssistantAgent recommends calling one.
+user_proxy = UserProxyAgent(
+    name="User",
+    human_input_mode="TERMINATE", # Set to "ALWAYS" or "TERMINATE" if you want human approval
+    code_execution_config={
+        "last_n_messages": 1, # Only consider the last message for code execution
+        "work_dir": "coding", # Directory for generated code files
+        "use_docker": False, # Set to True if you have Docker and want isolated execution
+    },
+    # The function_map explicitly tells the UserProxyAgent which Python functions it can execute.
+    function_map={
+        "web_search": web_search,
+        "get_weather_forecast": get_weather_forecast,
+        # Add any other tools here that the UserProxyAgent might need to execute
+    },
+    # It's generally good practice for the UserProxyAgent to have an LLM config
+    # if it might need to generate replies when human input is not provided,
+    # or if it's coordinating tool calls.
+    llm_config=gemini_llm_config, # Let UserProxyAgent also use Gemini for its own reasoning
+    is_termination_msg=lambda x: x.get("content", "").find("TERMINATE") != -1, # Custom termination message
+)
+
+
+planner = AssistantAgent(
+    name="PlannerAgent",
+    llm_config=gemini_llm_config,
+    system_message="""PlannerAgent. Your goal is to create a structured travel itinerary day-by-day given location, duration, and preferences.
+    Suggest initial ideas and an overall geographical structure. Do NOT add specific restaurant or weather details; rely on ResearchAgent and WeatherForecaster for that.
+    """
+)
+
+researcher = AssistantAgent(
+    name="ResearchAgent",
+    llm_config=gemini_llm_config,
+    system_message="""ResearchAgent. Your goal is to suggest specific restaurants, cultural spots, local experiences, and hidden gems for the given destination,
+    aligned with the PlannerAgent's daily structure and user's preferences (food, culture, hidden gems).
+    You have access to the 'web_search' tool. **You MUST use 'web_search' whenever you need specific, up-to-date, or detailed information** about places, activities, or food recommendations.
+    Always present your findings clearly, *after* using the tool, and mention what you searched for and what you found. If the PlannerAgent provides a day's theme, elaborate on it using your research tool.
+    """
+)
+
+coordinator = AssistantAgent(
+    name="CoordinatorAgent",
+    llm_config=gemini_llm_config,
+    system_message="""CoordinatorAgent. Your goal is to synthesize and combine all inputs from PlannerAgent, ResearchAgent, and WeatherForecaster into one clear, comprehensive, and executable travel plan.
+    **Do NOT create a detailed itinerary until PlannerAgent has provided a full daily structure, ResearchAgent has provided specific recommendations, and WeatherForecaster has provided the official forecast.**
+    Ensure all user preferences are met, the plan is logical, and weather considerations are integrated.
+    Present the full, final itinerary clearly, and then explicitly say 'TERMINATE' to signal completion.
+    """
+)
+
+forecaster = AssistantAgent(
+    name="WeatherForecaster",
+    llm_config=gemini_llm_config,
+    system_message="""WeatherForecaster. Your primary goal is to provide the definitive weather forecast for the trip's location and dates.
+    **You MUST call the 'get_weather_forecast' tool first, for the specified location (e.g., 'Kyoto') and full date range (e.g., '2024-04-01', '2024-04-05').**
+    **After the tool executes and provides its output, you MUST then clearly and concisely summarize the *tool's exact findings* for the group in your next message.**
+    Do not assume weather or rely on other agents' weather information; use your tool to get the most accurate data. Be explicit about the forecast.
+    """
+)
+
+groupchat = GroupChat(
+    agents=[user_proxy, planner, researcher, coordinator, forecaster],
+    messages=[],
+    max_round=12, # Increased max_round to allow for tool calls and more conversation
+    speaker_selection_method="auto" # Let manager decide who speaks
+)
+
+manager = GroupChatManager(
+    groupchat=groupchat,
+    llm_config=gemini_llm_config
+)
+
+try:
+    print(f"\n--- Starting chat with per-LLM-call delay of {LLM_CALL_DELAY_SECONDS} seconds ---\n")
+    chat_result = user_proxy.initiate_chat(
+        manager,
+        message="Plan a 5-day food and culture trip to Kyoto in April. I want to see historical sites, experience local food, and find some unique hidden gems. Also, tell me about the weather for that period."
+    )
+    print("\n--- Chat completed ---")
+
+    # Extract and save the final plan
+    if chat_result.last_message and chat_result.last_message["content"] == "TERMINATE":
+        print("\n--- Termination signal received, extracting final plan ---")
+        final_plan_content = ""
+        # Iterate through chat history in reverse to find CoordinatorAgent's last detailed message
+        # before the final "TERMINATE" message itself.
+        # We start from the second-to-last message (index -2) to skip the final TERMINATE.
+        for i in range(len(chat_result.chat_history) - 2, -1, -1):
+            msg = chat_result.chat_history[i]
+            # Check if the message is from the CoordinatorAgent and does not solely contain "TERMINATE"
+            if msg.get("sender") == "CoordinatorAgent" and "TERMINATE" not in msg.get("content", "").strip():
+                final_plan_content = msg["content"]
+                break
+
+        if final_plan_content:
+            file_name = "travel_plan.md"
+            with open(file_name, "w", encoding="utf-8") as f:
+                f.write(f"# Kyoto 5-Day Food & Culture Trip (April)\n\n")
+                f.write("Generated by AutoGen Travel Planner\n\n---\n\n")
+                f.write(final_plan_content)
+            print(f"\nTravel plan saved successfully to {file_name}")
+        else:
+            print("\nCould not find a comprehensive plan from CoordinatorAgent before termination.")
+    else:
+        print("\nChat terminated without CoordinatorAgent explicitly stating 'TERMINATE' after a plan.")
+
+except Exception as e:
+    print(f"\n--- An unexpected error occurred during chat initiation: {e} ---")
+    raise
