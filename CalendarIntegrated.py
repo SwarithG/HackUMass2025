@@ -130,20 +130,20 @@ def create_delayed_gemini_client(config):
         genai.GenerativeModel.generate_content = delayed_generate_content_wrapper
 
     # Create and return the Gemini model instance (it will now use the patched method)
-    model_name = config.get("model", "gemini-2.0-flash-lite")
+    model_name = config.get("model", "gemini-2.0-flash")
     return genai.GenerativeModel(model_name=model_name)
 
 # --- Define the shared Gemini LLM configuration ---
 gemini_llm_config = {
     "config_list": [
         {
-            "model": "gemini-2.0-flash-lite",
+            "model": "gemini-2.0-flash",
             "api_key": gemini_api_key,
             "api_type": "google",
             "custom_client_builder": create_delayed_gemini_client, # Link our custom builder here
         }
     ],
-    "temperature": 0.8
+    "temperature": 0.7
 }
 
 # --- Create the agents ---
@@ -162,7 +162,7 @@ user_proxy = UserProxyAgent(
     function_map={
         "web_search": web_search,
         "get_weather_forecast": get_weather_forecast,
-        # "add_calendar_event": add_calendar_event
+        "add_calendar_event": add_calendar_event
         # Add any other tools here that the UserProxyAgent might need to execute
     },
     # It's generally good practice for the UserProxyAgent to have an LLM config
@@ -230,7 +230,7 @@ integrater = AssistantAgent(
 )
 
 groupchat = GroupChat(
-    agents=[user_proxy, planner, researcher, coordinator, forecaster],
+    agents=[user_proxy, planner, researcher, coordinator, forecaster,converter,integrater],
     messages=[],
     max_round=30, # Increased max_round to allow for tool calls and more conversation
     speaker_selection_method="auto" # Let manager decide who speaks
